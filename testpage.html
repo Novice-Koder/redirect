@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <script type='text/javascript' src='https://slayytech.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://slayytech.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    
+    <script>
+      //To check url contain the hash part
+      //If not load simple page without js
+        /*
+          var currpage    = window.location.href;
+          var lasturl     = sessionStorage.getItem("last_url");
+
+            if(lasturl == null || lasturl.length === 0 || currpage !== lasturl ){
+                sessionStorage.setItem("last_url", currpage);
+                return true;
+                console.log("New page loaded, condition");
+
+            }else{
+              //l="www.google.com";
+              l = window.location.href;
+              location.href=l;
+              //location.href='https://href.li/?url='+encodeURIComponent(l);
+              console.log("Refreshed Page");  
+              return false;
+            }
+            */
+            /*
+            if (window.location.search != "") {
+                alert("Hash(#) component exists");
+                let a = window.location.hash;
+                console.log("search",a);
+            }
+            else {
+                alert("Hash(#) component doesn't exist");
+                console.log("search 2",window.location.href);
+            }*/
+        
+        
+         /*window.reload = function(){
+          if(window.location.search === "?=" || window.location.hash === "?id=")
+          {
+            window.location.replace("https://facebook.com");
+          }
+
+        }*/
+      </script>
+  </head>
+  <body style="background-color:orangered; color:white; font-family:'Courier New', Courier, monospace;font-size:larger;font-weight: bold;">
+    
+  <h2>Test Page</h2>
+  <center>
+    <a id="w3s" onclick="clickon()" style="text-decoration:none; font-weight:bolder; padding: 10px; background-color:yellowgreen; color:whitesmoke " href="#">Go to second page</a>
+  </center>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Amet consectetur adipiscing elit pellentesque. Sit amet dictum sit amet justo donec. Augue eget arcu dictum varius duis at consectetur lorem. Aliquet nec ullamcorper sit amet risus nullam eget. Sapien nec sagittis aliquam malesuada bibendum. Quisque non tellus orci ac auctor. Lacus vel facilisis volutpat est velit egestas dui id ornare. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consectetur adipiscing elit ut aliquam purus sit amet. Feugiat in fermentum posuere urna. Ultricies lacus sed turpis tincidunt. Consectetur libero id faucibus nisl tincidunt eget nullam non. Id aliquet risus feugiat in ante metus.
+
+    <p>Dui nunc mattis enim ut. Tristique senectus et netus et malesuada. Sit amet nisl suscipit adipiscing bibendum est ultricies. Dui ut ornare lectus sit. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. In eu mi bibendum neque egestas congue quisque egestas. Nunc sed augue lacus viverra. Ac turpis egestas maecenas pharetra convallis posuere. Arcu dui vivamus arcu felis bibendum. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Dictum varius duis at consectetur lorem donec. Quis auctor elit sed vulputate mi sit amet. Elit duis tristique sollicitudin nibh.
+    </p>
+    <p>Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Arcu bibendum at varius vel. Sed risus pretium quam vulputate dignissim suspendisse in. Felis eget velit aliquet sagittis. Nulla aliquet enim tortor at auctor urna nunc. Id ornare arcu odio ut. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Tortor id aliquet lectus proin nibh nisl. Eget egestas purus viverra accumsan in nisl nisi. Sed adipiscing diam donec adipiscing tristique. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi.
+    </p>
+    <p>Vitae purus faucibus ornare suspendisse sed nisi lacus. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Enim eu turpis egestas pretium aenean pharetra magna ac. Leo duis ut diam quam nulla. Ac tortor vitae purus faucibus ornare suspendisse. Egestas congue quisque egestas diam in arcu cursus euismod quis. Netus et malesuada fames ac turpis egestas integer. Tristique et egestas quis ipsum. Dui nunc mattis enim ut tellus elementum sagittis. Massa tempor nec feugiat nisl pretium fusce. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Risus nullam eget felis eget nunc lobortis mattis aliquam faucibus.
+    </p>
+    <p>Nunc sed velit dignissim sodales ut eu. Sed adipiscing diam donec adipiscing tristique risus nec. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Gravida dictum fusce ut placerat. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Posuere urna nec tincidunt praesent semper feugiat. Massa tincidunt dui ut ornare lectus. Duis at consectetur lorem donec massa sapien faucibus. Varius sit amet mattis vulputate enim.</p>
+  </p>
+    <p id="root"></p>
+  <hr>
+  <p id="hashcode"></p>
+  <hr>
+  <h2>Decoded</h2><p id="decoded"></p>
+  
+  <script>
+    window.onload = function(){
+      let value = window.location.search;
+      if(value == "" )
+      {
+        jQuery('#w3s').hide();
+      }
+      else{
+        jQuery('#w3s').show();
+      }
+    }
+  </script>
+    <script>
+      document.getElementById("root").innerHTML = "The full URL of this page is:<br>" + window.location.href;
+        // Create Base64 Object
+        var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+
+       //var url =  "aHR0cHM6Ly9ocmVmLmxpLz9odHRwczovL3NsYXl5dGVjaC5jb20vP2lkPWNWSlJVekpZUkZsQ2RVTkphME50UzJ0cFJ6RnJNbTh3ZUZsM1ZqZDFVVVZKV0dKRWJUSkdUa3QxTVU1YVEzTlVLMUZWY1RjdmFtTlFMMDV2UTI1dlRuSkhXRUpsWVU1NU5FNXFObWxSYkcxMlJrSTRTMlJNUTBoTU9VSlROMHBZTjBGNWFWTktRemhPU1c1bVdFcDNkRTAxWmk5QmQycGFOemRvTml0SVEzWT0=";
+       var url = window.location.hash;
+       //console.log(url);
+       //let hash_value = location.search;
+       let s = window.location.search;
+       let rm = s.replace("?=",'');
+       //document.getElementById("hashcode").innerHTML = "The full URL of this page is:<br>" + hash_value;
+        // Encode the String
+        //var encodedString = Base64.encode("http://127.0.0.1:5501/secondpage.html/#landing");
+        //document.getElementById("encoded").innerHTML = encodedString
+        //console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+
+        // Decode the String
+        //var decodedString = Base64.decode(encodedString);
+        var decodedString = Base64.decode(rm);
+        //clickon() = decodedString;
+        //decodedString = window.location.href;
+        document.getElementById("decoded").innerHTML = decodedString;
+        console.log(decodedString); // Outputs: "Hello World!"
+        //window.location.replace(decodedString);
+        
+        function clickon(){
+          var string = decodedString;
+          return location.replace(string),document.getElementById('landing').submit(); 
+        }
+    </script>
+  </body>
+</html>

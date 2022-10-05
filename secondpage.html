@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>secondPage</title>
+
+<link rel='stylesheet' id='sora_main_css-css' href='https://slayytech.com/wp-content/plugins/soralink/assets/css/css.css?ver=6.0.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://slayytech.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://slayytech.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<style>
+    p{
+    text-align:justify;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight:400; 
+    padding: 10px;  
+    color:black;
+    }
+    </style>
+
+    <script>
+        window.onload = function hashcheck(){
+          var value = window.location.search;
+          var valuehasd = window.location.hash;
+          if(value == null || valuehasd == null )
+          {
+            jQuery('#landing').hide();
+            console.log("No hash tag");
+          }
+          else{
+            console.log("contain hash tag");
+            window.onload = landing(),reload();
+          }
+        }
+       function reload(){
+        // To check page is loaded first time or reloaded
+        var currpage = window.location.href;
+        var lasturl = sessionStorage.getItem("last_url");
+        
+        if(lasturl == null || lasturl.length === 0 || currpage !== lasturl){
+            sessionStorage.setItem("last_url", currpage);
+            console.log("New page loaded");
+            //jQuery('.wait').show();
+            return true;
+        }
+        else{
+            let url = window.location.href;
+            //let anchor = document.getElementById("w3s");
+           //let query = anchor.search;
+           //let hash = anchor.hash;
+           //let myvalue = "yogender";
+           //let rm = query.replace("?",'');
+           //let search = rm = myvalue;
+            //remove_hash = window.location.replace(rml,'');
+            //l=location.replace=encodeURIComponent(remove_hash);//'https://href.li/?url='+encodeURIComponent(remove_hash);
+           
+            jQuery('.wait').hide();
+            console.log(url);
+            console.log("Refreshed Page");
+            //remove.recheckhash();
+            jQuery('#landing').hide();
+            //remove.changelink();
+            return false;  
+        }
+    }
+    </script>
+</head>
+<body>
+<center>
+<p>This is the second page</p>
+<p>But the browser cannot go back</p>
+<p>Because it has used the replace Property</p>
+
+<div id="landing" class="soractrl">
+    <div class="klnsora"></div>
+    
+    <input type="hidden" name="recaptcha_response" id="recaptchaResponse"/>
+    
+    <div class="wait">
+        <center>
+            <img id="pleasewait" src="https://slayytech.com/wp-content/uploads/2021/05/Webp.net-compress-image-25.jpg"></center>
+    </div>
+    <div class="to" style="display: none;">
+        <a href="#generate" id="generater" onclick="mygenerate()"><img src="https://slayytech.com/wp-content/uploads/2021/04/button_click-here-1.jpg"></a>
+    </div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Amet consectetur adipiscing elit pellentesque. Sit amet dictum sit amet justo donec. Augue eget arcu dictum varius duis at consectetur lorem. Aliquet nec ullamcorper sit amet risus nullam eget. Sapien nec sagittis aliquam malesuada bibendum. Quisque non tellus orci ac auctor. Lacus vel facilisis volutpat est velit egestas dui id ornare. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consectetur adipiscing elit ut aliquam purus sit amet. Feugiat in fermentum posuere urna. Ultricies lacus sed turpis tincidunt. Consectetur libero id faucibus nisl tincidunt eget nullam non. Id aliquet risus feugiat in ante metus.
+
+    <p>Dui nunc mattis enim ut. Tristique senectus et netus et malesuada. Sit amet nisl suscipit adipiscing bibendum est ultricies. Dui ut ornare lectus sit. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. In eu mi bibendum neque egestas congue quisque egestas. Nunc sed augue lacus viverra. Ac turpis egestas maecenas pharetra convallis posuere. Arcu dui vivamus arcu felis bibendum. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Dictum varius duis at consectetur lorem donec. Quis auctor elit sed vulputate mi sit amet. Elit duis tristique sollicitudin nibh.
+    </p>
+    <p>Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Arcu bibendum at varius vel. Sed risus pretium quam vulputate dignissim suspendisse in. Felis eget velit aliquet sagittis. Nulla aliquet enim tortor at auctor urna nunc. Id ornare arcu odio ut. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Tortor id aliquet lectus proin nibh nisl. Eget egestas purus viverra accumsan in nisl nisi. Sed adipiscing diam donec adipiscing tristique. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi.
+    </p>
+    <p>Vitae purus faucibus ornare suspendisse sed nisi lacus. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Enim eu turpis egestas pretium aenean pharetra magna ac. Leo duis ut diam quam nulla. Ac tortor vitae purus faucibus ornare suspendisse. Egestas congue quisque egestas diam in arcu cursus euismod quis. Netus et malesuada fames ac turpis egestas integer. Tristique et egestas quis ipsum. Dui nunc mattis enim ut tellus elementum sagittis. Massa tempor nec feugiat nisl pretium fusce. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Risus nullam eget felis eget nunc lobortis mattis aliquam faucibus.
+    </p>
+    <p>Nunc sed velit dignissim sodales ut eu. Sed adipiscing diam donec adipiscing tristique risus nec. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Gravida dictum fusce ut placerat. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Posuere urna nec tincidunt praesent semper feugiat. Massa tincidunt dui ut ornare lectus. Duis at consectetur lorem donec massa sapien faucibus. Varius sit amet mattis vulputate enim.</p>
+  </p> 
+<hr>
+    
+<div class="soractrl">
+    <div id="generate">
+        <center>
+            <div class="waits" style="display: none;">
+                <img id="pleasewaits"  src="https://slayytech.com/wp-content/uploads/2021/05/Webp.net-compress-image-25.jpg">
+            </div>
+            <div class="spoint" style="display: none;">
+                <a href="#" onclick="changelink()"><img  id="showlink"   src="https://slayytech.com/wp-content/uploads/2021/04/button_click-here-1.jpg"></a>
+            </div>
+            <div class="klnsora"></div>
+        </center>
+    </div>
+</div>
+<script>
+
+    function landing(){
+    var soramode = 'default';
+    var threshold = 7*1000;
+    setTimeout(function(){
+        countdown();
+        jQuery('.to').show();
+        jQuery('.wait').hide();
+    },threshold);
+    }
+</script>
+<script>
+    function changelink(){
+        l = "https:\/\/moviesnation.nl/";
+        window.location.replace(l);
+        //BeforeUnloadEvent.recheckhash();
+        
+         //window.location.replace("https://google.com");
+         //let link = decodeurl();
+     }
+</script>
+<script>
+    ////#############mysoralink###############////
+ // Create Base64 Object
+ var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+ 
+
+    
+    
+     
+    /*
+
+
+     function recheckhash(){
+         //To check url contain the hash part
+         //If not load simple page without js
+         //window.onload = function() {
+             if (window.location.hash != "")            
+                 {alert("Hash(#) component exists");
+                 return true;
+                 }
+             else {
+                 alert("Hash(#) component doesn't exist");
+                 window.location.replace(window.location.href);
+
+                 return false;
+             }
+         //}
+     }
+
+     function decodeurl(){
+         var url = window.location.hash;
+         //flag = mylink.recheckhash();
+         let output="";
+         //if(flag == 1){
+             var url;
+             console.log(url);
+             //let hash_value = location.search;
+             //let s = window.location.search;
+             let rm = url.replace("?=",'');
+             // Decode the String
+             var decodedString = Base64.decode(rm);
+             //document.getElementById("decoded").innerHTML = decodedString;
+             console.log(decodedString); // Outputs: "Hello World!"
+             output = window.location.replace(decodedString);
+             return output;
+        // }
+         //else{
+         //    output = window.location.href;
+         //}
+     }
+ */
+      
+ 
+     function redirect(){
+         
+     }
+     function mygenerate(){
+         //jQuery('.to').hide();
+         jQuery('.waits').show();
+         var soramode = 'default';
+         var threshold = 7*1000;
+         setTimeout(function(){
+            jQuery('.waits').hide();
+            jQuery('.spoint').show();
+         
+             
+         },threshold);
+     }
+ 
+     function countdown(){
+         jQuery('#landing').append('<center id ="countdown" class="pswait"></center>');
+         var message = "%d seconds before download link appears";
+         // seconds before download link becomes visible
+         var count = 10;
+         var countdown_element = document.getElementById("countdown");
+         var download_link = document.getElementById("human_verification");
+         var timer = setInterval(function(){
+         // if countdown equals 0, the next condition will evaluate to false and the else-construct will be executed
+         if (count) {
+             // display text
+             countdown_element.innerHTML = "Please wait for %d seconds.".replace("%d", count);
+             // decrease counter
+             count--;
+         } 
+         else 
+         {
+             // stop timer
+             clearInterval(timer);
+             // hide countdown
+             countdown_element.style.display = "none";
+             // show download link
+             //download_link.style.display = "";
+         }
+            }, 600);
+     }
+ 
+ </script>
+ 
+<!--
+    <script>
+      //To check url contain the hash part
+      //If not load simple page without js
+        window.onload = function() {
+            if (window.location.search != "") {
+                alert("Hash(#) component exists");
+                
+            }
+            else {
+                alert("Hash(#) component doesn't exist");
+                console.log("search 2",window.location.href);
+                console.log("search",a);
+                window.location.replace("https://google.com");
+            }
+        }
+        
+         /*window.reload = function(){
+          if(window.location.search === "?=" || window.location.hash === "?id=")
+          {
+            window.location.replace("https://facebook.com");
+          }
+
+        }*/
+      
+        //jQuery('.wait').hide();
+        jQuery('#landing').append('<center id ="countdown" class="pswait"></center>');
+        //jQuery('.waits').delay(11000).fadeIn('slow');
+        //jQuery('.pswait').delay(9500).fadeOut('slow');
+        function mygenerate() {
+            jQuery('.to').hide();
+            jQuery('.waits').show();
+            var soramode = 'default';
+            var threshold = 7*1000;
+            setTimeout(function(){
+                jQuery('.spoint').show();
+                jQuery('.waits').hide();
+            
+        },threshold);
+        }
+        //jQuery('.waits').hide();
+        //jQuery('.spoint').fadeIn('slow');
+        
+        (function(){
+           var message = "%d seconds before download link appears";
+           // seconds before download link becomes visible
+           var count = 10;
+           var countdown_element = document.getElementById("countdown");
+           var download_link = document.getElementById("human_verification");
+           var timer = setInterval(function(){
+              // if countdown equals 0, the next condition will evaluate to false and the else-construct will be executed
+              if (count) {
+                  // display text
+                  countdown_element.innerHTML = "Please wait for %d seconds.".replace("%d", count);
+                  // decrease counter
+                  count--;
+              } else {
+                  // stop timer
+                  clearInterval(timer);
+                  // hide countdown
+                  countdown_element.style.display = "none";
+                  // show download link
+                  //download_link.style.display = "";
+              }
+           }, 600);
+        })();
+    </script>
+    -->
+</center>
+</body>
+</html>
