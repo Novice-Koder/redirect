@@ -1,0 +1,2 @@
+# redirect
+javascript redirect
